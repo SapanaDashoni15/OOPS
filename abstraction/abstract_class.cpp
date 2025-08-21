@@ -2,9 +2,9 @@
 #include<string>
 using namespace std;
 
-class Shape{
+class Shape{ // abstract class
     public:
-    virtual void draw() = 0;
+    virtual void draw() = 0; // pure virtual function
 };
 
 class Triangle : public Shape {
