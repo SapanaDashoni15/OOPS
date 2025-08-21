@@ -1,10 +1,12 @@
 ### OOPS in cpp
-. Object oriented prohramming appraoch where we write code using classes and objects.
+. Object oriented is a programming appraoch where we write code using classes and objects.
 . it is easy to write code using real life scenario using OOPS
 
-Object - all entities in the real world are objects. ex - laptop, phone, pen, book 
+### Object 
+all entities in the real world are objects. ex - laptop, phone, pen, book 
 
-Class - Blueprint of the objects. It defines object's properties and methods.
+### Class 
+Blueprint of the objects. It defines object's properties and methods.
 
 1. Encapsulation → Data Hiding
 Encapsulation is wrapping up of data and member functions in a single unit called class.
@@ -15,7 +17,7 @@ Prevents direct access to data, allows access only through methods.
 
 Focus on what the object does, not how it does it.
 
-👉 Example:
+Example:
 When you drive a car, you only press the start() button, you don’t care how the engine works inside.
 
 3. Inheritance → Reusability of Code
@@ -30,7 +32,7 @@ Same function behaves differently depending on context.
 
 
 
-Summary
+### Summary
 
 Encapsulation → Protect the data
 
@@ -46,7 +48,8 @@ Private - data and methods accessible inside class
 Public - data & methods accesible to everyone
 Protected - data and memebrs are accessible inside class and to its derived class (used in inheritance)
 
-Constructors - special method invoked automatically at time of object creation. Used for initialisation
+### Constructors 
+special method invoked automatically at time of object creation. Used for initialisation
 - same name as class
 - constructor dosen't have a return type
 - only called once(automatically), at object creation
@@ -60,7 +63,8 @@ this pointer - is a special pointer in cpp that points to the current object.
 
 Types-
 
-Destructor - opp0site of constructor - deallocate memory
+### Destructor 
+opp0site of constructor - deallocate memory
 ~ClassName() {
     // to delete dynamic memory
     delete cgpaPtr; 
@@ -123,3 +127,6 @@ Static can be used with variables and objects.
 variables declared as static in a function are created & inherited once for the ligetime of the program. -> in function
 
 static variables in a class are created & initialised once. Thay are shared by all the objects of the class. -> in class
+
+
+Courtesy - Sourabh Shukla, Shradha Kapra
