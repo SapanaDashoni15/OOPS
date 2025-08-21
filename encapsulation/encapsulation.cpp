@@ -20,7 +20,7 @@ public:
     }
 
     void setCGPA(double c) {
-        if (c >= 0 && c <= 10)  =
+        if (c >= 0 && c <= 10)
             cgpa = c;
         else
             cout << "Invalid CGPA!" << endl;
