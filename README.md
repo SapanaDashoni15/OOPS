@@ -129,4 +129,20 @@ variables declared as static in a function are created & inherited once for the 
 static variables in a class are created & initialised once. Thay are shared by all the objects of the class. -> in class
 
 
+### Friend function
+A friend function is a function that is not a member of a class, but it can access the class’s private and protected members.
+
+Declared using the keyword friend.
+
+why friend function ?? Normally, private and protected members of a class are hidden (encapsulation).
+But sometimes, we want external functions (not members of the class) to access these hidden members safely and intentionally.
+
+That’s where friend functions come in.
+
+# Friend functions break encapsulation, so they should be used only when absolutely necessary.
+
+They are not inherited (a derived class does not inherit friend functions).
+
+Use them mainly for operator overloading or closely related classes.
+
 Courtesy - Sourabh Shukla, Shradha Kapra
