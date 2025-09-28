@@ -118,7 +118,10 @@ hiding all unncessary details & showing only the important parts
     Pure virtual function - a function declared in abse class but has no definition there.
         virtual void funcNmae() = 0;
 
+### Encapsulation 
+Encapsulation means combining data memebers and methods into a single unit called class.In Object-Oriented Programming, it helps keep things organized and secure.
 
+For example, think of a company with different departments—finance, sales, and accounts. Each department handles its own tasks and data. The finance department deals only with financial records, and the sales department handles only sales. Just like that, in programming, each class manages its own data and operations, keeping everything separate and protected. That's encapsulation.
 
 ### Static keyword 
 
