@@ -10,7 +10,7 @@ class Base{
     }
 };
 
-class Parent1 : virtual public Base {
+class Parent1 :  public Base {
 
 };
 
@@ -36,8 +36,6 @@ int main() {
     // Without virtual → 2 copies of Base → ambiguity.
 
     // With virtual → 1 shared Base → no ambiguity.
-
-
 
     return 0;
 }
