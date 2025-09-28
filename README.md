@@ -84,6 +84,60 @@ when properties & members functions of base class are passed on to the derived c
 ### Diamond problem
 - The Diamond Problem is an ambiguity error that arises in multiple inheritance when a derived class inherits from two or more base classes that share a common ancestor. This results in the inheritance hierarchy forming a diamond shape, hence the name "Diamond Problem." The ambiguity arises because the derived class has multiple paths to access members or methods inherited from the common ancestor, leading to confusion during method resolution and member access.
 
+prerequisite
+
+The -> operator in C++ is called the member access operator for pointers. It’s used when you have a pointer to an object and you want to access that object’s members (variables or functions).
+
+Child* obj = new Child();
+
+(*obj).fun();   // Dereference pointer first, then use .
+
+OR
+
+obj->fun();     // Equivalent to (*obj).fun()
+
+So -> is basically shorthand for dereferencing the pointer and then accessing a member.
+
+// C++ Program to illustrate the diamond problem
+#include <iostream>
+using namespace std;
+
+// Base class
+class Base {
+public:
+    void fun() { cout << "Base" << endl; }
+};
+
+// Parent class 1
+class Parent1 : public Base {
+public:
+};
+
+// Parent class 2
+class Parent2 : public Base {
+public:
+};
+
+// Child class inheriting from both Parent1 and Parent2
+class Child : public Parent1, public Parent2 {
+};
+
+int main()
+{
+    Child* obj = new Child();
+    obj->fun(); // Abiguity arises, as Child now has two copies of fun()
+    return 0;
+
+    OR
+
+    Child obj;
+    obj.fun();
+
+
+    <!-- Use objects if you don’t need dynamic lifetime or polymorphism.
+    Use pointers (or better, smart pointers) if you need dynamic memory or polymorphism. -->
+}
+
 
 
 
