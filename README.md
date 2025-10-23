@@ -1,26 +1,38 @@
 ### OOPS in cpp
 . Object oriented is a programming appraoch where we write code using classes and objects.
-. it is easy to write code using real life scenario using OOPS
+. it is easy to write code using real life scenario using OOP concept
 
 ### Object 
-all entities in the real world are objects. ex - laptop, phone, pen, book 
+
+An Object is a basic unit of Object-Oriented Programming that represents real-life entities. ex - laptop, camera, pen, book 
 
 ### Class 
-Blueprint of the objects. It defines object's properties and methods.
+Class is a user-defined Blueprint using which objects are created. It defines object's properties and methods.
 
-1. Encapsulation → Data Hiding
+### 1. Encapsulation → Data Hiding  
+( https://www.geeksforgeeks.org/cpp/encapsulation-in-cpp/ )
 Encapsulation is wrapping up of data and member functions in a single unit called class.
 
 Prevents direct access to data, allows access only through methods.
 
-2. Abstraction → Hide the implementation, show only functionality
+### Implementation of Encapsulation in C++
+
+- <h3> Declare variables as private: <h3/> Keep the class data members private so that they cannot be accessed directly from outside the class. This ensures data hiding.
+- <h3> Use getters and setters: <h3/> Provide public functions (getters and setters) to access and modify private variables safely. These methods can also include validation to ensure only valid data is assigned.
+- <h3> Apply proper access specifiers: <h3/> Use private for data members to hide information and public for member functions that provide controlled access to the data.
+
+
+
+### 2. Abstraction → Hide the implementation, show only functionality 
+(https://www.geeksforgeeks.org/cpp/abstraction-in-cpp/)
 
 Focus on what the object does, not how it does it.
 
 Example:
-When you drive a car, you only press the start() button, you don’t care how the engine works inside.
+When you drive a car, you only press the start button, you don’t care how the engine works inside.
 
-3. Inheritance → Reusability of Code
+### 3. Inheritance → Reusability of Code
+(https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
 
 One class can inherit properties and methods of another class.
 
