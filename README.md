@@ -34,7 +34,7 @@ When you drive a car, you only press the start button, you don’t care how the 
 ### 3. Inheritance → Reusability of Code
 (https://www.geeksforgeeks.org/cpp/inheritance-in-c/)
 
-One class can inherit properties and methods of another class.
+it is a mechanism in which One class can inherit properties and methods of another class.
 
 Promotes code reuse.
 
@@ -149,8 +149,6 @@ int main()
     <!-- Use objects if you don’t need dynamic lifetime or polymorphism.
     Use pointers (or better, smart pointers) if you need dynamic memory or polymorphism. -->
 }
-
-
 
 
 ### Polymorphism
